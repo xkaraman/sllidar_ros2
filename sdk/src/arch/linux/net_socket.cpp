@@ -147,7 +147,7 @@ u_result SocketAddress::setAddressFromString(const char * address_string,  Socke
     }
     setPort(prevPort);
 
-    return ans<=0?RESULT_INVALID_DATA:RESULT_OK;
+    return ans==NULL?RESULT_INVALID_DATA:RESULT_OK;
 }
 
 
